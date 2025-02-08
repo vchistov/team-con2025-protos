@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package avatar.v1;
+package customer.avatar.v1;
 
 service AvatarService {
     rpc AddAvatar (AddAvatarRequest) returns (AddAvatarResponse);
