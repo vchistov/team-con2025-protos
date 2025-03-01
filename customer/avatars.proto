@@ -4,6 +4,7 @@ package customer.avatar.v1;
 
 service AvatarService {
     rpc AddAvatar (AddAvatarRequest) returns (AddAvatarResponse);
+    rpc AddRandomAvatar (AddRandomAvatarRequest) returns (AddRandomAvatarResponse);
     rpc GetAvatar (GetAvatarRequest) returns (Avatar);
     rpc DeleteAvatar (DeleteAvatarRequest) returns (DeleteAvatarResponse);
     rpc ListAvatars (ListAvatarsRequest) returns (stream Avatar);
@@ -23,6 +24,15 @@ message AddAvatarRequest {
 }
 
 message AddAvatarResponse {
+    int64 id = 1;
+}
+
+message AddRandomAvatarRequest {
+    int64 profile_id = 1;
+    // string media_type = 2;
+}
+
+message AddRandomAvatarResponse {
     int64 id = 1;
 }
 
