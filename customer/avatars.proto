@@ -40,4 +40,6 @@ message DeleteAvatarResponse {
     bool success = 1;
 }
 
-message ListAvatarsRequest { }
+message ListAvatarsRequest {
+    int64 profile_id = 1;
+}
