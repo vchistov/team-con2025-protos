@@ -6,7 +6,7 @@ service AvatarService {
     rpc AddAvatar (AddAvatarRequest) returns (AddAvatarResponse);
     rpc GetAvatar (GetAvatarRequest) returns (Avatar);
     rpc DeleteAvatar (DeleteAvatarRequest) returns (DeleteAvatarResponse);
-    rpc ListAvatars () returns (stream Avatar);
+    rpc ListAvatars (ListAvatarsRequest) returns (stream Avatar);
 }
 
 message Avatar {
