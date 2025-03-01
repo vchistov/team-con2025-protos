@@ -1,6 +1,5 @@
 {
     "recommendations": [
-        "plex.vscode-protolint",
-        "zxh404.vscode-proto3"
+        "bufbuild.vscode-buf"
     ]
 }

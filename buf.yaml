@@ -1,0 +1,11 @@
+# For details on buf.yaml configuration, visit https://buf.build/docs/configuration/v2/buf-yaml
+version: v2
+lint:
+  use:
+    - FILE_LOWER_SNAKE_CASE
+    - PACKAGE_DEFINED
+    - SERVICE_PASCAL_CASE
+    - FIELD_LOWER_SNAKE_CASE
+breaking:
+  use:
+    - FILE

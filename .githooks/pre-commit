@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Check buf is installed
+if ! command -v buf &> /dev/null
+then
+    echo "Error: buf is not installed. Please install it from https://buf.build/docs/cli/installation/."
+    exit 1
+fi
+
+# Run linter
+buf lint
+
+# Check linter results
+if [ $? -ne 0 ]; then
+    echo "buf lint failed. Please fix the issues before committing."
+    exit 1
+fi
+
+exit 0
